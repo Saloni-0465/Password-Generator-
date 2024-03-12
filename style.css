@@ -1,0 +1,187 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}  */
+/* 
+body{
+    background-color: #0a0908;
+}
+
+.main{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    width: 500px;
+    border: 2px solid green;
+} */ 
+
+/* 
+.header h4{
+    display: block;
+    color: #6c757d;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+} */ 
+
+/* .length p{
+    color: #e9ecef;
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+}
+.rulesList ul li{
+    padding-left: 5px;
+    color: #e9ecef;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+}
+#generate{
+    width: 100;
+    background-color: #16db65;
+    height: 30px;
+    width: ;
+} */
+.header h4{
+    color: #6c757d;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #0a0908;
+}
+/* .displayDiv{
+    background-color:  #212529;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 88%;
+
+} */
+#displayText{
+    background-color:  #212529;
+    width: 94%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.length p{
+    color: #e9ecef;
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+} 
+.rulesList ul {
+    padding: 0; 
+    margin: 0;
+    text-align: left; 
+}
+.rulesList ul li{
+    color: #e9ecef;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    list-style-type: none;
+    padding: 3px;
+}
+input[type="range"] {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 90%;
+    height: 10px; 
+    background: black;
+    border-radius: 5px; 
+    outline: none; 
+  }
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    background: white ;
+    border-radius: 50%; 
+    cursor: pointer; 
+}
+.generatorDiv{
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    height: 300px;
+}
+
+.generatorDiv > * {
+    width: 100%; 
+    height: 100%; 
+}
+.generateBtn button {
+    width: 80%;
+    background-color: #b2ff9e;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 6px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: 600;
+}
+.generateBtn button:hover{
+    color: white;
+}
+.strength{
+    display: flex;
+    align-items: center;
+    background-color:  #0a0908; 
+    padding: 10px; 
+    margin: 10px; 
+    width: 80%; 
+    max-width: 400px; 
+    max-height: 18px;
+    color: #6c757d;
+    font-family: "Roboto Mono", monospace;
+}
+/* #strength{
+    background-color:  #0a0908;
+    padding: 10px; 
+    margin: 10px; 
+    width: 80%;
+    border: 1px solid #0a0908 ;
+} */
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+}
+#numberInput{
+    background-color:#b2ff9e;
+}
+#generate:hover{
+    background-color:  #212529;
+    border: 1px solid #b2ff9e;
+}
+.displayDiv {
+    position: relative;
+}
+#copyIcon {
+    position: absolute;
+    color: #b2ff9e;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+#copyIcon:hover{
+    color: white;
+}
