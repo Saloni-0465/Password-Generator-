@@ -82,54 +82,54 @@ document.addEventListener("DOMContentLoaded", function() {
         return smallChars[Math.floor(Math.random()*smallChars.length)]
     }
     //selectors
-    const strength = document.querySelector(".strength");
-    const bar1 = document.getElementById("one");
-    const bar2 = document.getElementById("two");
-    const bar3 = document.getElementById("three");
-    const bar4 = document.getElementById("four");
+    // const strength = document.querySelector(".strength");
+    // const bar1 = document.getElementById("one");
+    // const bar2 = document.getElementById("two");
+    // const bar3 = document.getElementById("three");
+    // const bar4 = document.getElementById("four");
     
-    const checkboxesChecked = () => {
-        const arr = [];
-        if (upperInput.checked) {
-            arr.push("1");
-        }
-        if (lowerInput.checked) {
-            arr.push("2");
-        }
-        if (numberInput.checked) {
-            arr.push("3");
-        }
-        if (specialInput.checked) {
-            arr.push("4");
-        }
+    // const checkboxesChecked = () => {
+    //     const arr = [];
+    //     if (upperInput.checked) {
+    //         arr.push("1");
+    //     }
+    //     if (lowerInput.checked) {
+    //         arr.push("2");
+    //     }
+    //     if (numberInput.checked) {
+    //         arr.push("3");
+    //     }
+    //     if (specialInput.checked) {
+    //         arr.push("4");
+    //     }
     
-        return arr.length;
-    };
+    //     return arr.length;
+    // };
     
-    const strengthBox = () => {
-        if (totalChar.value < 8 || checkboxesChecked() <= 2) {
-            strength.textContent = "WEAK";
-            bar1.style.backgroundColor = "darkgoldenrod";
-            bar2.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
-            bar3.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
-            bar4.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
-        }
-        if (totalChar.value >= 8 && checkboxesChecked() === 3) {
-            strength.textContent = "MEDIUM";
-            bar1.style.backgroundColor = "darkgoldenrod";
-            bar2.style.backgroundColor = "darkgoldenrod";
-            bar3.style.backgroundColor = "darkgoldenrod"
-            bar4.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+    // const strengthBox = () => {
+    //     if (totalChar.value < 8 || checkboxesChecked() <= 2) {
+    //         strength.textContent = "WEAK";
+    //         bar1.style.backgroundColor = "darkgoldenrod";
+    //         bar2.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    //         bar3.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+    //         bar4.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
+    //     }
+    //     if (totalChar.value >= 8 && checkboxesChecked() === 3) {
+    //         strength.textContent = "MEDIUM";
+    //         bar1.style.backgroundColor = "darkgoldenrod";
+    //         bar2.style.backgroundColor = "darkgoldenrod";
+    //         bar3.style.backgroundColor = "darkgoldenrod"
+    //         bar4.style.backgroundColor = "rgba(255, 255, 255, 0.5)"
     
-        }
-        if (totalChar.value >= 8 && checkboxesChecked() === 4) {
-            strength.textContent = "STRONG";
-            bar1.style.backgroundColor = "darkgoldenrod";
-            bar2.style.backgroundColor = "darkgoldenrod";
-            bar3.style.backgroundColor = "darkgoldenrod";
-            bar4.style.backgroundColor = "darkgoldenrod";
-        }
-    };
+    //     }
+    //     if (totalChar.value >= 8 && checkboxesChecked() === 4) {
+    //         strength.textContent = "STRONG";
+    //         bar1.style.backgroundColor = "darkgoldenrod";
+    //         bar2.style.backgroundColor = "darkgoldenrod";
+    //         bar3.style.backgroundColor = "darkgoldenrod";
+    //         bar4.style.backgroundColor = "darkgoldenrod";
+    //     }
+    // };
 
     
     const copybtn = document.getElementById("copyIcon")
