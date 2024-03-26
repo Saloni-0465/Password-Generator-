@@ -182,33 +182,7 @@ input[type="range"]::-webkit-slider-thumb {
     border: none;
     cursor: pointer;
 }
-.strength-box{
-    display: flex;
-    align-items: center;
-    background-color: rgba(26, 22, 22, 0.632);
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    color: grey;
 
-}
-
-.strength-box .bar {
-    border: 1px solid white;
-    width: 10px;
-    height: 25px;
-    margin: 3px;
-    background-color: rgba(49, 41, 41, 0.748);
-}
-
-.strength{
-    margin-left: 200px;
-    margin-right: 10px;
-    height: fit-content;
-    width: fit-content;
-    background-color: rgba(128, 128, 128, 0);
-    font-size: 20px;
-}
 #copyIcon:hover{
     color: white;
 }
