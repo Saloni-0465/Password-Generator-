@@ -81,4 +81,18 @@ document.addEventListener("DOMContentLoaded", function() {
         let smallChars="abcdefghijklmnopqrstuvxyz";
         return smallChars[Math.floor(Math.random()*smallChars.length)]
     }
+    
+    const copybtn = document.getElementById("copyIcon")
+
+    function copyText(){
+        let password = document.getElementById("displayText")
+
+        navigator.clipboard.writeText(password.textContent).then(function (){
+            alert(`Your password ${password.textContent} is copied to clipboard`)
+        });
+
+    };
+
+    copybtn.addEventListener("click",copyText);
+
 });
